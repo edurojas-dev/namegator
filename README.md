@@ -1,4 +1,6 @@
-# appnamesbranas
+<h1>Projeto Full Stack - Gerador de Dominios</h1>
+<h3>Aplicação realizado cursando a série FullStack com Rodrigo Branas no Youtube</h3>
+<h4>Tecnoligias utilizadas: Vue.js, Bootstrap, GraphQL e Node.js</h4>
 
 ## Project setup
 ```
