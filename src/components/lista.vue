@@ -3,10 +3,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md mt-3">
-            <elemtoLista  tituloList="Prefixos" :items="prefixos" @addItem="addPrefix" @deleteItem="deletePrefix"></elemtoLista>
+            <elemtoLista  tituloList="Prefixos" :items.sync="prefixos"></elemtoLista>
         </div>
         <div class="col-md mt-3">
-            <elemtoLista  tituloList="Sufixos" :items="sufixos" @addItem="addSufix" @deleteItem="deleteSufix"></elemtoLista>
+            <elemtoLista  tituloList="Sufixos" :items.sync="sufixos"></elemtoLista>
         </div>
       </div>
 
@@ -63,7 +63,6 @@ export default {
       sufixos: ["Tech", "Start"],
     };
   },
-
   computed: {
     dominios() {
       console.log("Gerando dominios...");
