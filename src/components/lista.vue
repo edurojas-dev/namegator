@@ -13,7 +13,7 @@
       <!-- os dominios -->
       <div class="row mt-4">
         <div class="col-md-12">
-          <h5>
+          <h5 class="text-white">
             Domínios <span class="badge bg-info">{{ dominios.length }}</span>
           </h5>
           <div class="card">
@@ -53,34 +53,16 @@ import "bootstrap/dist/css/bootstrap.css";
 import "font-awesome/css/font-awesome.css";
 import elemtoLista from "./elementoLista.vue"
 export default {
-    components: {
-        elemtoLista,
-    },
-    name: "lista",
-    data: () => {
-        return {
-            prefixos: ["Home", "Finance"],
-            sufixos: ["Tech", "Start"],
-        };
-    },
-
-    methods: {
-        addPrefix(prefix) {
-            this.prefixos.push(prefix);
-        },
-
-        addSufix(sufix) {
-            this.sufixos.push(sufix);
-        },
-
-        deletePrefix(prefix) {
-            this.prefixos.splice(this.prefixos.indexOf(prefix), 1);
-        },
-
-        deleteSufix(sufix) {
-            this.sufixos.splice(this.sufixos.indexOf(sufix), 1);
-        },
-    },
+  components: {
+    elemtoLista,
+  },
+  name: "lista",
+  data: () => {
+    return {
+      prefixos: ["Home", "Finance"],
+      sufixos: ["Tech", "Start"],
+    };
+  },
 
   computed: {
     dominios() {

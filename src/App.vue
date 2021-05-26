@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <home />
+    <home/>
   </div>
 </template>
 
@@ -19,5 +19,4 @@ body{
   margin: 0;
   padding: 0;
 }
-
 </style>

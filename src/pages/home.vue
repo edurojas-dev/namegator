@@ -19,7 +19,5 @@ export default ({
 })
 </script>
 <style scoped>
-#home{
-    height: 100vh;
-}
+
 </style>

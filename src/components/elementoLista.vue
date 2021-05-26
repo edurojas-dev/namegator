@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h5>
+    <h5 class="text-white">
       {{tituloList}} 
       <span class="badge bg-info">{{ items.length }}</span>
     </h5>
@@ -67,12 +67,12 @@ export default {
     addItem(item){
       if(this.item == null || this.item == ""){alert("Preencha o campo com dado válido!")}
       else{
-        this.$emit("addItem", item),
+        this.items.push(item);
         this.item = ""
       }
     },
     deleteItem(item){
-      this.$emit("deleteItem", item)
+      this.items.splice(this.items.indexOf(item), 1);
     }
   }
 }
